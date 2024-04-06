@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Card = () => {
   return (
-    <div className=" backdrop-blur-xl flex flex-wrap  justify-between">
+    <div className=" backdrop-blur-xl flex flex-wrap justify-around  gap-y-4">
       <div className="p-4 rounded max-w-52  bg-base-300   shadow-xl">
         <figure className=" ">
           <Image src={sacramento} alt="Shoes" className="rounded-lg" />

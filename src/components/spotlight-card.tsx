@@ -1,5 +1,7 @@
-import { Image } from "@nextui-org/react";
+"use client"
 import React from "react";
+import newJersy from "../assets/newJersy.png"
+import Image from "next/image";
 
 const Spotlight_card = ({
   image,
@@ -16,9 +18,9 @@ const Spotlight_card = ({
 }) => {
   return (
     <div className=" backdrop-blur-xl flex flex-wrap  gap-4">
-      <div className="p-4 rounded max-w-80 bg-base-100   shadow-xl">
-        <figure className="">
-          <Image src={image} alt="Shoes" className="rounded-lg " />
+      <div className="p-4 flex-col items-center justify-center rounded max-w-80 bg-base-100 shadow-xl">
+        <figure className="flex align-middle items-center justify-center">
+          <Image src={newJersy} alt="Shoes" className="rounded-lg " />
         </figure>
         <div className="border-b-1 border-dashed my-4"></div>
         <div className=" items-center text-center  mt-4">

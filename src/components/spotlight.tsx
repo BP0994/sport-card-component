@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Spotlight_card from "./spotlight-card";
+import newJersy from "../assets/newJersy.png";
 
 const Spotlight = () => {
   const aviators =
@@ -14,13 +15,13 @@ const Spotlight = () => {
           <h1 className="text-center   text-5xl font-bold mb-4 mt-8">
             Collection Spotlight
           </h1>
-          <h1 className="text-center font-light px-8  ">
+          <h1 className="text-center font-light px-8">
             Discover extraordinary moments with our Spotlight Collection
             metatickets—exclusive access to premium events for an unforgettable
             experience. Grab yours today!
           </h1>
         </div>
-        <div className="flex justify-between mt-20">
+        <div className="flex justify-around flex-wrap gap-y-4 mt-20">
           <Spotlight_card
             image={aviators}
             team="Las Vegas Aviators"
